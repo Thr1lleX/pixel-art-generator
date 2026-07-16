@@ -1,0 +1,31 @@
+# Default training configuration
+
+model:
+  name: "pixel_art_gen_v1"
+  architecture: "gan"          # Options: gan, vae, diffusion, transformer
+  latent_dim: 256
+  image_size: 64               # Output image size (64x64 pixels)
+  channels: 3                  # RGB
+
+training:
+  epochs: 100
+  batch_size: 32
+  learning_rate: 0.0002
+  lr_scheduler: "cosine"       # Options: cosine, step, none
+  seed: 42
+  device: "cuda"               # Options: cuda, cpu, mps
+
+data:
+  dataset_path: "data/processed/"
+  num_workers: 4
+  augmentation: true
+
+logging:
+  tensorboard: true
+  wandb: false
+  log_interval: 50             # Steps between logs
+  save_interval: 5             # Epochs between checkpoint saves
+
+output:
+  checkpoint_dir: "outputs/checkpoints/"
+  generated_dir: "outputs/generated/"
