@@ -52,8 +52,7 @@ venv.bak/
 *.safetensors
 
 # Datasets (too large for git)
-data/raw/
-data/processed/
+data/
 
 # TensorBoard logs
 logs/
