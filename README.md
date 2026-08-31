@@ -1,17 +1,16 @@
-# Pixel Art Generator 🎨
+# Pixel Art Generator 
 
 A deep learning project trained **from scratch** to generate pixel art images from text prompts.
 
-> Developed as part of the 1A curriculum at ENSTA Paris.
 
-## 🚀 Overview
+##  Overview
 
 This project explores generative AI applied to pixel art:
 - Train a model from scratch using **TensorFlow** and/or **PyTorch**
 - Generate 8-bit / 16-bit style pixel art from text descriptions
 - Experiment with architectures (GAN, Diffusion, VAE, Transformer...)
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Pixel_art_generator/
@@ -31,7 +30,7 @@ Pixel_art_generator/
 └── README.md
 ```
 
-## ⚙️ Setup
+##  Setup
 
 ### Prerequisites
 - Python 3.10+
@@ -57,19 +56,18 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## 🏋️ Training
+##  Training
 
 ```bash
 python src/training/train.py --config configs/default.yaml
 ```
 
-## 🎨 Generate
+##  Generate
 
 ```bash
 python src/inference/generate.py --prompt "a tiny knight in pixel art style"
 ```
-
-## 📊 Experiments
+##  Experiments
 
 Track training with TensorBoard:
 
@@ -77,7 +75,7 @@ Track training with TensorBoard:
 tensorboard --logdir logs/
 ```
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Deep Learning**: PyTorch / TensorFlow
 - **Image Processing**: Pillow, NumPy
